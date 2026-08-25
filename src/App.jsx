@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { MessageCircle } from 'lucide-react';
 
 // Components
@@ -72,6 +72,8 @@ import SupplierNotifications from './supplier/SupplierNotifications';
 import SupplierProfile from './supplier/SupplierProfile';
 
 // Error pages
+
+import NotFound from './pages/NotFound';
 import ServerError from './pages/ServerError';
 import Maintenance from './pages/Maintenance';
 import Unauthorized from './pages/Unauthorized';
@@ -148,16 +150,16 @@ function App() {
           <Route path="/supplier/profile" element={<SupplierLayout><SupplierProfile /></SupplierLayout>} />
 
 
-          {/* ==================Error/Other Routes=====================  */}
+          {/* ==================Error Routes=====================  */}
+
+
           <Route path="/search" element={<PublicLayout><SearchResults /></PublicLayout>} />
           <Route path="/unauthorized" element={<Unauthorized />} />
           <Route path="/maintenance" element={<Maintenance />} />
           <Route path="/session-expired" element={<SessionExpired />} />
           <Route path="/loading" element={<Loading />} /> 
           <Route path="/500" element={<ServerError />} />
-          
-          {/* Catch-all route: redirects any broken/unknown links back to Home */}
-          <Route path="*" element={<Navigate to="/" replace />} /> 
+          <Route path="*" element={<NotFound />} /> {/* The * catches ALL unknown URLs */}
         </Routes>
 
         {/* Global Floating WhatsApp Button */}
