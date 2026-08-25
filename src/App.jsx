@@ -30,23 +30,22 @@ import Cancellation from './pages/Cancellation';
 
 
 // Admin Pages & Layout
-import AdminLayout from './admin/AdminLayout';
-import AdminDashboard from './admin/AdminDashboard';
-import AdminCustomers from './admin/AdminCustomers';
-import AdminSuppliers from './admin/AdminSuppliers';
-import AdminCollection from './admin/AdminCollection';
-import AdminDelivery from './admin/AdminDelivery';
-import AdminBilling from './admin/AdminBilling';
-import AdminReports from './admin/AdminReports';
-import AdminInventory from './admin/AdminInventory';
-import AdminExpenses from './admin/AdminExpenses';
-import AdminEmployees from './admin/AdminEmployees';
-import AdminRoutes from './admin/AdminRoutes';
-import AdminSettings from './admin/AdminSettings';
-import AdminProfile from './admin/AdminProfile';
-import AdminCustomerDetails from './admin/AdminCustomerDetails';
-import AdminInvoiceDetails from './admin/AdminInvoiceDetails';
-
+import AdminLayout from './Admin/AdminLayout';
+import AdminDashboard from './Admin/AdminDashboard';
+import AdminCustomers from './Admin/AdminCustomers';
+import AdminSuppliers from './Admin/AdminSuppliers';
+import AdminCollection from './Admin/AdminCollection';
+import AdminDelivery from './Admin/AdminDelivery';
+import AdminBilling from './Admin/AdminBilling';
+import AdminReports from './Admin/AdminReports';
+import AdminInventory from './Admin/AdminInventory';
+import AdminExpenses from './Admin/AdminExpenses';
+import AdminEmployees from './Admin/AdminEmployees';
+import AdminRoutes from './Admin/AdminRoutes';
+import AdminSettings from './Admin/AdminSettings';
+import AdminProfile from './Admin/AdminProfile';
+import AdminCustomerDetails from './Admin/AdminCustomerDetails';
+import AdminInvoiceDetails from './Admin/AdminInvoiceDetails';
 
 // Customer Pages & Layout
 import CustomerLayout from './customer/CustomerLayout';
