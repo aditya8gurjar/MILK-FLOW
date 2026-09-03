@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { MessageCircle } from 'lucide-react';
 
 // Components
@@ -22,30 +22,28 @@ import Gallery from './pages/Gallery';
 import Careers from './pages/Careers';
 import Testimonials from './pages/Testimonials';
 import Terms from './pages/Terms';
-
 import ForgotPassword from './pages/ForgotPassword';
 import Privacy from './pages/Privacy';
 import Refund from './pages/Refund';
 import Cancellation from './pages/Cancellation';
 
-
-// Admin Pages & Layout
-import AdminLayout from './Admin/AdminLayout';
-import AdminDashboard from './Admin/AdminDashboard';
-import AdminCustomers from './Admin/AdminCustomers';
-import AdminSuppliers from './Admin/AdminSuppliers';
-import AdminCollection from './Admin/AdminCollection';
-import AdminDelivery from './Admin/AdminDelivery';
-import AdminBilling from './Admin/AdminBilling';
-import AdminReports from './Admin/AdminReports';
-import AdminInventory from './Admin/AdminInventory';
-import AdminExpenses from './Admin/AdminExpenses';
-import AdminEmployees from './Admin/AdminEmployees';
-import AdminRoutes from './Admin/AdminRoutes';
-import AdminSettings from './Admin/AdminSettings';
-import AdminProfile from './Admin/AdminProfile';
-import AdminCustomerDetails from './Admin/AdminCustomerDetails';
-import AdminInvoiceDetails from './Admin/AdminInvoiceDetails';
+// Admin Pages & Layout (Fixed: ./admin/ instead of ./Admin/)
+import AdminLayout from './admin/adminlayout';
+import AdminDashboard from './admin/admindashboard';
+import AdminCustomers from './admin/admincustomers';
+import AdminSuppliers from './admin/adminsuppliers';
+import AdminCollection from './admin/admincollection';
+import AdminDelivery from './admin/admindelivery';
+import AdminBilling from './admin/adminbilling';
+import AdminReports from './admin/adminreports';
+import AdminInventory from './admin/admininventory';
+import AdminExpenses from './admin/adminexpenses';
+import AdminEmployees from './admin/adminemployees';
+import AdminRoutes from './admin/adminroutes';
+import AdminSettings from './admin/adminsettings';
+import AdminProfile from './admin/adminprofile';
+import AdminCustomerDetails from './admin/admincustomerdetails';
+import AdminInvoiceDetails from './admin/admininvoicedetails';
 
 // Customer Pages & Layout
 import CustomerLayout from './customer/CustomerLayout';
@@ -70,8 +68,7 @@ import SupplierDocuments from './supplier/SupplierDocuments';
 import SupplierNotifications from './supplier/SupplierNotifications';
 import SupplierProfile from './supplier/SupplierProfile';
 
-// Error pages
-
+// Utility/Error Pages
 import NotFound from './pages/NotFound';
 import ServerError from './pages/ServerError';
 import Maintenance from './pages/Maintenance';
@@ -79,8 +76,6 @@ import Unauthorized from './pages/Unauthorized';
 import SessionExpired from './pages/SessionExpired';
 import Loading from './pages/Loading';
 import SearchResults from './pages/SearchResults';
-
-
 
 function App() {
   return (
@@ -104,7 +99,6 @@ function App() {
           <Route path="/careers" element={<PublicLayout><Careers /></PublicLayout>} />
           <Route path="/testimonials" element={<PublicLayout><Testimonials /></PublicLayout>} />
           <Route path="/terms" element={<PublicLayout><Terms /></PublicLayout>} />
-
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/privacy" element={<PublicLayout><Privacy /></PublicLayout>} />
           <Route path="/refund" element={<PublicLayout><Refund /></PublicLayout>} />
@@ -148,10 +142,7 @@ function App() {
           <Route path="/supplier/notifications" element={<SupplierLayout><SupplierNotifications /></SupplierLayout>} />
           <Route path="/supplier/profile" element={<SupplierLayout><SupplierProfile /></SupplierLayout>} />
 
-
-          {/* ==================Error Routes=====================  */}
-
-
+          {/* ================= UTILITY/ERROR ROUTES ================= */}
           <Route path="/search" element={<PublicLayout><SearchResults /></PublicLayout>} />
           <Route path="/unauthorized" element={<Unauthorized />} />
           <Route path="/maintenance" element={<Maintenance />} />
