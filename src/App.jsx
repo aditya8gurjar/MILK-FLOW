@@ -27,23 +27,23 @@ import Privacy from './pages/Privacy';
 import Refund from './pages/Refund';
 import Cancellation from './pages/Cancellation';
 
-// Admin Pages & Layout (Fixed: ./admin/ instead of ./Admin/)
-import AdminLayout from './admin/adminlayout';
-import AdminDashboard from './admin/admindashboard';
-import AdminCustomers from './admin/admincustomers';
-import AdminSuppliers from './admin/adminsuppliers';
-import AdminCollection from './admin/admincollection';
-import AdminDelivery from './admin/admindelivery';
-import AdminBilling from './admin/adminbilling';
-import AdminReports from './admin/adminreports';
-import AdminInventory from './admin/admininventory';
-import AdminExpenses from './admin/adminexpenses';
-import AdminEmployees from './admin/adminemployees';
-import AdminRoutes from './admin/adminroutes';
-import AdminSettings from './admin/adminsettings';
-import AdminProfile from './admin/adminprofile';
-import AdminCustomerDetails from './admin/admincustomerdetails';
-import AdminInvoiceDetails from './admin/admininvoicedetails';
+// Admin Pages & Layout (Fixed Capitalization for Vercel)
+import AdminLayout from './admin/AdminLayout';
+import AdminDashboard from './admin/AdminDashboard';
+import AdminCustomers from './admin/AdminCustomers';
+import AdminSuppliers from './admin/AdminSuppliers';
+import AdminCollection from './admin/AdminCollection';
+import AdminDelivery from './admin/AdminDelivery';
+import AdminBilling from './admin/AdminBilling';
+import AdminReports from './admin/AdminReports';
+import AdminInventory from './admin/AdminInventory';
+import AdminExpenses from './admin/AdminExpenses';
+import AdminEmployees from './admin/AdminEmployees';
+import AdminRoutes from './admin/AdminRoutes';
+import AdminSettings from './admin/AdminSettings';
+import AdminProfile from './admin/AdminProfile';
+import AdminCustomerDetails from './admin/AdminCustomerDetails';
+import AdminInvoiceDetails from './admin/AdminInvoiceDetails';
 
 // Customer Pages & Layout
 import CustomerLayout from './customer/CustomerLayout';
