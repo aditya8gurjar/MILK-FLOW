@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { MessageCircle } from 'lucide-react';
@@ -27,23 +28,23 @@ import Privacy from './pages/Privacy';
 import Refund from './pages/Refund';
 import Cancellation from './pages/Cancellation';
 
-// Admin Pages & Layout (Fixed Capitalization for Vercel)
-import AdminLayout from './admin/AdminLayout';
-import AdminDashboard from './admin/AdminDashboard';
-import AdminCustomers from './admin/AdminCustomers';
-import AdminSuppliers from './admin/AdminSuppliers';
-import AdminCollection from './admin/AdminCollection';
-import AdminDelivery from './admin/AdminDelivery';
-import AdminBilling from './admin/AdminBilling';
-import AdminReports from './admin/AdminReports';
-import AdminInventory from './admin/AdminInventory';
-import AdminExpenses from './admin/AdminExpenses';
-import AdminEmployees from './admin/AdminEmployees';
-import AdminRoutes from './admin/AdminRoutes';
-import AdminSettings from './admin/AdminSettings';
-import AdminProfile from './admin/AdminProfile';
-import AdminCustomerDetails from './admin/AdminCustomerDetails';
-import AdminInvoiceDetails from './admin/AdminInvoiceDetails';
+// Admin Pages & Layout
+import AdminLayout from './Admin/AdminLayout';
+import AdminDashboard from './Admin/AdminDashboard';
+import AdminCustomers from './Admin/AdminCustomers';
+import AdminSuppliers from './Admin/AdminSuppliers';
+import AdminCollection from './Admin/AdminCollection';
+import AdminDelivery from './Admin/AdminDelivery';
+import AdminBilling from './Admin/AdminBilling';
+import AdminReports from './Admin/AdminReports';
+import AdminInventory from './Admin/AdminInventory';
+import AdminExpenses from './Admin/AdminExpenses';
+import AdminEmployees from './Admin/AdminEmployees';
+import AdminRoutes from './Admin/AdminRoutes';
+import AdminSettings from './Admin/AdminSettings';
+import AdminProfile from './Admin/AdminProfile';
+import AdminCustomerDetails from './Admin/AdminCustomerDetails';
+import AdminInvoiceDetails from './Admin/AdminInvoiceDetails';
 
 // Customer Pages & Layout
 import CustomerLayout from './customer/CustomerLayout';
@@ -81,7 +82,7 @@ function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen bg-white font-sans">
-        
+
         <Routes>
           {/* ================= PUBLIC ROUTES ================= */}
           <Route path="/" element={<PublicLayout><Home /></PublicLayout>} />
@@ -105,21 +106,21 @@ function App() {
           <Route path="/cancellation" element={<PublicLayout><Cancellation /></PublicLayout>} />
 
           {/* ================= ADMIN ROUTES ================= */}
-          <Route path="/Admin" element={<AdminLayout><AdminDashboard /></AdminLayout>} />
-          <Route path="/Admin/customers" element={<AdminLayout><AdminCustomers /></AdminLayout>} />
-          <Route path="/Admin/suppliers" element={<AdminLayout><AdminSuppliers /></AdminLayout>} />
-          <Route path="/Admin/collection" element={<AdminLayout><AdminCollection /></AdminLayout>} />
-          <Route path="/Admin/delivery" element={<AdminLayout><AdminDelivery /></AdminLayout>} />
-          <Route path="/Admin/billing" element={<AdminLayout><AdminBilling /></AdminLayout>} />
-          <Route path="/Admin/reports" element={<AdminLayout><AdminReports /></AdminLayout>} />
-          <Route path="/Admin/inventory" element={<AdminLayout><AdminInventory /></AdminLayout>} />
-          <Route path="/Admin/expenses" element={<AdminLayout><AdminExpenses /></AdminLayout>} />
-          <Route path="/Admin/employees" element={<AdminLayout><AdminEmployees /></AdminLayout>} />
-          <Route path="/Admin/routes" element={<AdminLayout><AdminRoutes /></AdminLayout>} />
-          <Route path="/Admin/settings" element={<AdminLayout><AdminSettings /></AdminLayout>} />
-          <Route path="/Admin/profile" element={<AdminLayout><AdminProfile /></AdminLayout>} />
-          <Route path="/Admin/customers/details" element={<AdminLayout><AdminCustomerDetails /></AdminLayout>} />
-          <Route path="/Admin/billing/invoice" element={<AdminLayout><AdminInvoiceDetails /></AdminLayout>} />
+          <Route path="/admin" element={<AdminLayout><AdminDashboard /></AdminLayout>} />
+          <Route path="/admin/customers" element={<AdminLayout><AdminCustomers /></AdminLayout>} />
+          <Route path="/admin/suppliers" element={<AdminLayout><AdminSuppliers /></AdminLayout>} />
+          <Route path="/admin/collection" element={<AdminLayout><AdminCollection /></AdminLayout>} />
+          <Route path="/admin/delivery" element={<AdminLayout><AdminDelivery /></AdminLayout>} />
+          <Route path="/admin/billing" element={<AdminLayout><AdminBilling /></AdminLayout>} />
+          <Route path="/admin/reports" element={<AdminLayout><AdminReports /></AdminLayout>} />
+          <Route path="/admin/inventory" element={<AdminLayout><AdminInventory /></AdminLayout>} />
+          <Route path="/admin/expenses" element={<AdminLayout><AdminExpenses /></AdminLayout>} />
+          <Route path="/admin/employees" element={<AdminLayout><AdminEmployees /></AdminLayout>} />
+          <Route path="/admin/routes" element={<AdminLayout><AdminRoutes /></AdminLayout>} />
+          <Route path="/admin/settings" element={<AdminLayout><AdminSettings /></AdminLayout>} />
+          <Route path="/admin/profile" element={<AdminLayout><AdminProfile /></AdminLayout>} />
+          <Route path="/admin/customers/details" element={<AdminLayout><AdminCustomerDetails /></AdminLayout>} />
+          <Route path="/admin/billing/invoice" element={<AdminLayout><AdminInvoiceDetails /></AdminLayout>} />
 
           {/* ================= CUSTOMER ROUTES ================= */}
           <Route path="/customer" element={<CustomerLayout><CustomerDashboard /></CustomerLayout>} />
@@ -147,15 +148,15 @@ function App() {
           <Route path="/unauthorized" element={<Unauthorized />} />
           <Route path="/maintenance" element={<Maintenance />} />
           <Route path="/session-expired" element={<SessionExpired />} />
-          <Route path="/loading" element={<Loading />} /> 
+          <Route path="/loading" element={<Loading />} />
           <Route path="/500" element={<ServerError />} />
-          <Route path="*" element={<NotFound />} /> {/* The * catches ALL unknown URLs */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
 
         {/* Global Floating WhatsApp Button */}
-        <a 
-          href="https://wa.me/919876543210" 
-          target="_blank" 
+        <a
+          href="https://wa.me/919876543210"
+          target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-8 right-8 bg-green-500 p-4 rounded-full shadow-2xl hover:bg-green-600 transition z-50 group animate-bounce"
         >
@@ -164,6 +165,7 @@ function App() {
             Chat with us!
           </span>
         </a>
+
       </div>
     </Router>
   );
@@ -179,3 +181,4 @@ const PublicLayout = ({ children }) => (
 );
 
 export default App;
+
