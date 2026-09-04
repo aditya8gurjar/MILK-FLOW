@@ -105,21 +105,21 @@ function App() {
           <Route path="/cancellation" element={<PublicLayout><Cancellation /></PublicLayout>} />
 
           {/* ================= ADMIN ROUTES ================= */}
-          <Route path="/admin" element={<AdminLayout><AdminDashboard /></AdminLayout>} />
-          <Route path="/admin/customers" element={<AdminLayout><AdminCustomers /></AdminLayout>} />
-          <Route path="/admin/suppliers" element={<AdminLayout><AdminSuppliers /></AdminLayout>} />
-          <Route path="/admin/collection" element={<AdminLayout><AdminCollection /></AdminLayout>} />
-          <Route path="/admin/delivery" element={<AdminLayout><AdminDelivery /></AdminLayout>} />
-          <Route path="/admin/billing" element={<AdminLayout><AdminBilling /></AdminLayout>} />
-          <Route path="/admin/reports" element={<AdminLayout><AdminReports /></AdminLayout>} />
-          <Route path="/admin/inventory" element={<AdminLayout><AdminInventory /></AdminLayout>} />
-          <Route path="/admin/expenses" element={<AdminLayout><AdminExpenses /></AdminLayout>} />
-          <Route path="/admin/employees" element={<AdminLayout><AdminEmployees /></AdminLayout>} />
-          <Route path="/admin/routes" element={<AdminLayout><AdminRoutes /></AdminLayout>} />
-          <Route path="/admin/settings" element={<AdminLayout><AdminSettings /></AdminLayout>} />
-          <Route path="/admin/profile" element={<AdminLayout><AdminProfile /></AdminLayout>} />
-          <Route path="/admin/customers/details" element={<AdminLayout><AdminCustomerDetails /></AdminLayout>} />
-          <Route path="/admin/billing/invoice" element={<AdminLayout><AdminInvoiceDetails /></AdminLayout>} />
+          <Route path="/Admin" element={<AdminLayout><AdminDashboard /></AdminLayout>} />
+          <Route path="/Admin/customers" element={<AdminLayout><AdminCustomers /></AdminLayout>} />
+          <Route path="/Admin/suppliers" element={<AdminLayout><AdminSuppliers /></AdminLayout>} />
+          <Route path="/Admin/collection" element={<AdminLayout><AdminCollection /></AdminLayout>} />
+          <Route path="/Admin/delivery" element={<AdminLayout><AdminDelivery /></AdminLayout>} />
+          <Route path="/Admin/billing" element={<AdminLayout><AdminBilling /></AdminLayout>} />
+          <Route path="/Admin/reports" element={<AdminLayout><AdminReports /></AdminLayout>} />
+          <Route path="/Admin/inventory" element={<AdminLayout><AdminInventory /></AdminLayout>} />
+          <Route path="/Admin/expenses" element={<AdminLayout><AdminExpenses /></AdminLayout>} />
+          <Route path="/Admin/employees" element={<AdminLayout><AdminEmployees /></AdminLayout>} />
+          <Route path="/Admin/routes" element={<AdminLayout><AdminRoutes /></AdminLayout>} />
+          <Route path="/Admin/settings" element={<AdminLayout><AdminSettings /></AdminLayout>} />
+          <Route path="/Admin/profile" element={<AdminLayout><AdminProfile /></AdminLayout>} />
+          <Route path="/Admin/customers/details" element={<AdminLayout><AdminCustomerDetails /></AdminLayout>} />
+          <Route path="/Admin/billing/invoice" element={<AdminLayout><AdminInvoiceDetails /></AdminLayout>} />
 
           {/* ================= CUSTOMER ROUTES ================= */}
           <Route path="/customer" element={<CustomerLayout><CustomerDashboard /></CustomerLayout>} />
